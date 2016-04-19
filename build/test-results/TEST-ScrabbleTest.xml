@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ScrabbleTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-04-19T16:54:57" hostname="epicodus-58.local" time="0.002">
+  <properties/>
+  <testcase name="Scrabble_shouldReturnCorrespondingIntegerOfString_Integer" classname="ScrabbleTest" time="0.001"/>
+  <testcase name="Scrabble_shouldReturnCorrespondingSumsOfAllLetters_Integer" classname="ScrabbleTest" time="0.0"/>
+  <testcase name="Scrabble_shouldReturnCorrespondingSumsOfStrings_Integer" classname="ScrabbleTest" time="0.0"/>
+  <system-out><![CDATA[1
+87
+18
+]]></system-out>
+  <system-err><![CDATA[1
+87
+18
+]]></system-err>
+</testsuite>
