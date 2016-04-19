@@ -4,14 +4,11 @@ public class Scrabble {
 
   // public static void main(String[] args) {}
   public static Integer calcScore(String inWord){
-    Integer stringNum = 0;
 
+    Integer stringNum = 0;
+    inWord = inWord.toLowerCase();
     for (Integer index = 0; index < inWord.length(); index++) {
-      // if (inWord.charAt(index) == 'q' || inWord.charAt(index) == 'z') {
-      //   stringNum +=10;
-      // } else if (inWord.charAt(index) == 'q' || inWord.charAt(index) == 'z') {
-      //   stringNum +=8;
-      // }
+
       char currentChar = inWord.charAt(index);
 
       switch (currentChar) {
@@ -27,7 +24,8 @@ public class Scrabble {
           stringNum+= 5;
           break;
 
-        case 'f': case 'h': case 'v': case 'w':
+        case 'f': case 'h':
+        case 'v': case 'w':
         case 'y':
           stringNum+= 4;
           break;
@@ -41,20 +39,21 @@ public class Scrabble {
           stringNum+= 2;
           break;
 
-        case 'a': case 'e': case 'i': case 'o': case 'u': case 'l': case 'n': case 'r': case 's':
-        case 't':
+        case 'a': case 'e':
+        case 'i': case 'o':
+        case 'u': case 'l':
+        case 'n': case 'r':
+        case 's': case 't':
           stringNum+= 1;
+          break;
+
+        default:
           break;
       }
 
     }
-
-
     System.out.println(stringNum);
     System.err.println(stringNum);
     return stringNum;
   }
-
-
-
 }

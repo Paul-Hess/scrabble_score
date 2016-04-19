@@ -23,6 +23,12 @@ public class ScrabbleTest {
     assertEquals(expected, testScrabble.calcScore("abcdefghijklmnopqrstuvwxyz"));
   }
 
+  @Test
+  public void Scrabble_shouldReturnCorrespondingSumsOfUppercaseLetters_Integer() {
+    Scrabble testScrabble = new Scrabble();
+    Integer expected = 20;
+    assertEquals(expected, testScrabble.calcScore("QZ"));
+  }
 
 
 }
